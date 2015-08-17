@@ -1,0 +1,150 @@
+.section
+	&--form
+		.section__in
+			padding-top 5px
+			height 348px
+			background url(../images/how-bg.png) no-repeat 
+			clearfix()
+		
+			
+.quarantee
+	margin-bottom 10px
+	text-align center
+	font-size 0
+	&__i
+		margin-left 72px
+		border 1px solid #fff
+		display inline-block
+		vertical-align top
+		size 142px
+		background-color #fdfeff
+		background-image linear-gradient(180deg, #d9d9d9 0%, #d9d9d9 0%, white 100%)
+		box-shadow 0 5px 5px rgba(0, 0, 0, 0.41)
+		border-radius 9999px
+		text-transform uppercase
+		font-family open_sansbold, sans-serif
+		font-style normal
+		font-weight 700  
+		color #f60
+		text-align center
+		&:first-child
+			margin-left 0
+	&__text
+		line-height 1
+		display block
+		font-size 16px
+	&__i
+		&--1
+			.quarantee__text-1
+				margin-top 30px
+				font-size 41px
+			.quarantee__text-2
+				font-size 19px
+		&--2
+			.quarantee__text-1
+				margin-top 40px
+				font-size 20px
+			.quarantee__text-2
+				font-size 19px
+			.quarantee__text-3
+				font-size 24px
+		&--3
+			.quarantee__text
+				font-size 20px
+			.quarantee__text-1
+				margin-top 40px
+
+.form
+	float right
+	width 434px
+	&__title
+		margin-bottom 16px
+		font normal 23px/26px open_sansbold, sans-serif
+		color #036			
+		text-align center
+	&__row
+		margin-bottom 10px
+		&-bottom
+			clear left
+	&__input
+		margin-left 10px
+		width 206px
+		height 43px
+		float left
+		input
+			border none
+			width 206px
+			height 43px
+			background #FFF
+			font normal 14px/43px open_sanslight, sans-serif
+			color #000
+			text-align center
+		:first-child
+			margin-left 0
+		&-1
+			input
+				border-radius 18px 0 0 18px   
+		&-2
+			input
+				border-radius 0 18px 18px 0
+	&__submit
+		float right
+		input
+			display inline-block
+			border-radius 18px
+			background #003d63
+			line-height 43px
+			color #FFF 
+
+.secure
+	margin-left 30px
+	padding-left 34px 
+	position relative
+	display inline-block
+	font normal 14px/1 open_sanslight, sans-serif
+	color #000
+	&:before
+		position absolute
+		top 0
+		left 0
+		content ''
+		sprite($lock)
+.timer
+	float left
+	width 434px
+	clearfix()
+	font normal 14px/19px open_sansbold, sans-serif
+	&__text,
+	&__ul
+		display inline-block
+		font-size 0
+		color #036
+	&__text
+		// margin-right 25px
+		width 82px
+		color #FFF
+		font-size 14px
+	&__i
+		margin-left 4px
+		display inline-block
+		vertical-align top
+		sprite($timer)
+		text-align center
+		font-size 51px
+		:first-child
+			margin-left 0
+		&-val
+			display inline-block
+			padding-top 10px
+			line-height 51px
+		&-note
+			font-size 14px
+			font-style normal
+			font-family open_sanslight, sans-serif
+			color #000
+			display block
+	&__sep
+		display inline-block
+		font-size 51px
+		line-height 94px
+		

@@ -18,6 +18,7 @@ gulp.task 'stylus', ->
 		.pipe stylus
 			errors: true,
 			use: rupture()
+			url: { name: 'datauri', limit: false }
 			sourcemap: if gutil.env.debug then {comment: false, inline: true} else false
 		.pipe autoprefixer(
 			'Android >= ' + pkg.browsers.android

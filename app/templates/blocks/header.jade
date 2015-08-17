@@ -1,3 +1,15 @@
-.logo
-h1.h1.dark= pageTitle || page.title
-p.description Шаблон проекта для быстрого старта.
+header.header
+	.header__in
+		.header__logo LEAD-NEVA лид-агенство
+		a.header__action(href="#", title="#") Заказать звонок
+nav.nav
+	.nav__in
+		ul.nav__ul
+			each val, index  in { 0 : 'Как мы это делаем?',1 : 'Насколько это выгодно?',2 : 'Результаты наших заказчиков',3 : 'Отправить заявку' }
+				li.nav__i
+					a.nav__a(href="#", title="#") #{val}
+				
+		.phone
+			span.phone__code +7 (800) 
+			| 775 69 49
+		
